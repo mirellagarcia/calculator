@@ -1,32 +1,27 @@
+print("Bem-vindo a calculadora da Mirella")
 print("1- Somar")
 print("2- Subtrair")
 print("3- Multiplicação")
 print("4- Divisão ")
 print("5- Exponencial ")
-
-menu = int(input("Digite a operação desejada: "))
+menu = int(input("Digite o número referente a operação desejada: "))
+numero1 = int(input("digite o valor 1: "))
+numero2 = int(input("digite o valor 2: "))
 
 def calculadora():
     if (menu == 1): 
-      x = float(input("Primeiro numero: "))
-      y = float(input("Segundo numero: "))
-      print("Soma: ",x+y)
+      print("Soma: ",numero1+numero2)
     elif (menu == 2):
-      x = float(input("Primeiro numero: "))
-      y = float(input("Segundo numero: "))
-      print("Subtração: ",x-y)
+      print("Subtração: ",numero1-numero2)
     elif (menu == 3): 
-      x = float(input("Primeiro numero: "))
-      y = float(input("Segundo numero: "))
-      print("Multiplicação: ",x*y)
+      print("Multiplicação: ",numero1*numero2)
     elif (menu == 4):
-      x = float(input("Primeiro numero: "))
-      y = float(input("Segundo numero: "))
-      print("Divisão: ",x/y)
+      if int(numero2) == 0:
+        print('não pode executar')
+      else:
+          print("Divisão: ",numero1/numero2)
     elif (menu == 5): 
-      x = float(input("Primeiro numero: "))
-      y = float(input("Segundo numero: "))
-      print("Exponencial: ",x**y)
+      print("Exponencial: ",numero1**numero2)
     else:
       print("Tente novamente e insira uma operação valida")
 calculadora()
