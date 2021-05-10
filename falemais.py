@@ -1,4 +1,4 @@
-#Produto FaleMais by: Mirella&Vizir
+#Produto FaleMais by: Mirella
 print("Bem vindo ao FaleMais")
 
 #Tabela de valores do DDD 
